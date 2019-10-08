@@ -1,0 +1,104 @@
+\documentclass{amsart}
+
+\usepackage{lipsum}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage{tikz-cd}
+\usepackage{hyperref}
+\usepackage{enumerate}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{observation}{Observation}[section]
+\newtheorem{example}{Example}[section]
+
+\newenvironment{AMS}{****}{****}
+
+\begin{document}
+
+\title{The Galois Category of a Simplicial Set}
+
+\author{Frank Murphy-Hernandez}
+\address{Facultad de Ciencias, UNAM, Mexico City}
+\email{murphy@ciencias.unam.mx}
+
+\subjclass[2000]{Primary ****, ****; Secondary ****, ****}
+
+\date{\today}
+
+\keywords{Galois Categories,Simplicial Sets, Fundamental Group}
+
+\begin{abstract}
+
+\end{abstract}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Introduction}
+
+
+Galois categories were introduced by Grothendieck in \cite{grothendieck1971revetement} to create a fundamental group of a scheme. A comprehensive approach can be found in the paper of Cadoret \cite{cadoret2013galois}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Preliminaries}
+
+We denote by $\mathcal{S}_f$ the category of finite sets.
+
+We denote by $\Delta$ the simplex category and by $s\mathcal{S}$ the category of simplicial sets.
+
+\cite{goerss2009simplicial}
+\cite{may1992simplicial}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simplicial Coverings}
+
+\begin{definition}
+Let $X$ be a simplicial set. A simplicial covering of $X$ is a pair $(Y,p)$ where $Y$ is a simplicial set and $p\colon Y\longrightarrow X$ is asimplicial map such that...
+\end{definition}
+
+\begin{proposition}
+Let $X$ be a simplicial set and  $(Y,p)$ a simplicial covering of $X$. Then $(\vert Y\vert,\vert p\vert)$ is covering of $\vert X\vert$.
+\end{proposition}
+
+\begin{proof}
+
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simplicial Galois Category}
+
+\begin{definition}[Galois Category]
+A Galois category is a pair $(\mathcal{C},F)$ where $\mathcal{C}$ is a category and $F\colon \mathcal{C}\longrightarrow \mathcal{S}_f$, and satisfy the following axioms:
+\begin{enumerate}[{GC}1)]
+\item $\mathcal{C}$ is finitely complete.
+\item $\mathcal{C}$ has finite coproducts and categorical quotients by groups of automorphisms.
+\item Any morphism $f\colon A\longrightarrow B$ factors as $f''f'$ where $f'$ is a strict epimorphism and $f''$ is a split monomoprhism.
+\item $F$ commutes with finite limits.
+\item $F$ commutes with finite coproducts and categorical quotients by groups of automorphisms, and sends strict epimorphisms to strict epimorphisms.
+\item $F$ reflects isomorphisms.
+\end{enumerate}
+\end{definition}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{biblio}
+\bibliographystyle{plain}
+
+
+
+\end{document}
+
+%------------------------------------------------------------------------------
+% End of journal.tex
+%------------------------------------------------------------------------------
