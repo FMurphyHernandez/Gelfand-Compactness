@@ -23,7 +23,7 @@
 
 \begin{document}
 
-\title{Gelfand Compactness}
+\title{Algebraic Gelfand Compactness}
 
 \author{Frank Murphy-Hernandez}
 \address{Facultad de Ciencias, UNAM, Mexico City}
@@ -53,8 +53,15 @@ In this paper the rings are associative but we do not ask them to have unit.
 
 \cite{wisbauer2018foundations}
 
-We denote by $\mathcal{C}^*$ the category of commutative $C^*$-algebras and morphisms of $C^*$ algebras. We denote by $\mathcal{T}$ the category of Hausdorff locally compact topological spaces and proper continuous maps.
+If $A$ and $B$ are commutative $C^*$-algebras, and $f\colon A\longrightarrow B$ is an $*$-algebra morphism such that the linear span of $\{f(a)b\mid a\in A,b\in B\}$ is dense in $B$, then $f$ is called non-degenerate   We denote by $\mathcal{C}^*$ the category of commutative $C^*$-algebras and non-degenerate morphisms. 
 
+If $X$ and $Y$ are topological spaces and $\alpha\colon X\longrightarrow Y$ is a continuous map such that the inverse image of compact subsets of $Y$ are compact subsets of $X$, then we call $\alpha$ a proper map.  We denote by $\mathcal{T}$ the category of Hausdorff locally compact topological spaces and proper continuous maps. If $\alpha\colon X\longrightarrow\mathbb{C}$ is a continuous map such that for every $\epsilon>0$ there is $K_\epsilon$ compact subset of $X$ with $\vert \alpha(x)\vert<\epsilon$ for all $x\in X\setminus K_\epsilon$ ,then we say that $\alpha$ vanishes at infinity.
+
+\begin{proposition}[Non-unital Gelfand Duality]
+There is an equivalence of categories: $\mathcal{T}^{op}\cong \mathcal{C}^*$.
+\end{proposition}
+
+\cite{murphy2014c}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Rings with local units}
@@ -63,43 +70,77 @@ We denote by $\mathcal{C}^*$ the category of commutative $C^*$-algebras and morp
 Let $R$ be a ring. We say that $R$ is a ring with local units, if for any finitely many $x_1,\dots,x_n\in R$ there is an idempotent $e\in R$ with $a_1,\dots,a_n\in eRe$.
 \end{definition}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Rings with local units}
 \begin{definition}
 Let $R$ be a ring. We say that $R$ has enough idempotents, if there exists a family $\{e_\lambda\}_{\lambda\in\Lambda}$ of pairwise orthogonal idempotents of elements in $R$ with $R=\bigoplus_{\lambda\in\Lambda}Re_\lambda=\bigoplus_{\lambda\in\Lambda}e_\lambda R$. In this case $\{e_\lambda\}_{\lambda\in\Lambda}$ is called a complete family of idempotents in $R$. 
 \end{definition}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Rings with local units}
 \begin{definition}
 Let $R$ be a ring. We say that $R$ is a $s$-unital ring, if for any finitely many $x_1,\dots,x_n\in R$ there is $y\in R$ with $x_iy=x_i=yx_i$ for $i=1,\dots,n$.
 \end{definition}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Rings with local units}
 \begin{definition}
 Let $R$ be a ring. We say that $R$ is a firm ring, if the canonical morphism $\mu\colon R\otimes_R R\longrightarrow R$ given by $\mu(r\otimes s)=rs$ is an isomorphism.
 \end{definition}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Rings with local units}
 \begin{definition}
 Let $R$ be a ring. We say that $R$ is idempotent, if $R^2=R$, that is, that for any $x\in R$ there are $x_1,\dots,x_n,y_1,\dots,y_n\in R$ such that $x=\sum_{i=1}^nx_iy_i$.
 \end{definition}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Compact Dimension}
+
+\begin{definition}
+Let $A$ be a commutative $C^*$-algebra, and $\{e_\lambda\}_{\lambda\in\Lambda}$ a directed family of self adjoint elements of $A$. We say that $\{e_\lambda\}_{\lambda\in\Lambda}$ is an approximate identity, if $xe_\lambda\rightarrow x$, for all $x\in A$.
+\end{definition}
+
+It is well know that any commutative $C^*$-algebra has an approximate identity. In fact there is a canonical approximate identity given by the family of all positive self adjoint elements with norm less or equal than one with its natural order.
+
+\begin{definition}
+Let $A$ be a commutative $C^*$-algebra. We define the compact dimension of $A$ as the least cardinality of an approximate unit of $A$. We denote this cardinal by $dim_C(A)$
+\end{definition}
+
+As any commutative $C^*$-algebra has an approximate identity, the compact dimension is well defined. Also we have that a commutative $C^*$-algebra has unit if and only if $dim_C(A)=1$.
+
+\begin{proposition}
+Let $A$ be non-unital commutative $C^*$-algebra. Then $dim_C(A)$ is a limit cardinal.
+\end{proposition}
+
+\begin{proof}
+
+\end{proof}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Paracompact space}
+%\section{Paracompact space}
 
-\cite{dieudonne1944generalisation}
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Metacompact space}
-
-
+%\cite{dieudonne1944generalisation}
 
 
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Orthocompact space}
+%\section{Metacompact space}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Orthocompact space}
 
 
 
